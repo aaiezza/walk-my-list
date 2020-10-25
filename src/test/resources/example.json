@@ -1,0 +1,259 @@
+{
+  "game": {
+    "game_name": "The Legend of Zelda: The Wind Waker",
+    "release": {
+      "release_name": "North America",
+      "release_code": "NA",
+      "relase_date": "2003-03-24"
+    },
+    "game_publisher": "Nintendo",
+    "platform": "Nintendo GameCube"
+  },
+  "quests": [
+    {
+      "quest_name": "Get Hero's Clothes from Grandma",
+      "reward": [
+        {
+          "reward_name": "Hero's Clothes",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": []
+    },
+    {
+      "quest_name": "Crawl under Grandma's House",
+      "reward": [
+        {
+          "reward_name": "Orange Rupee",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": []
+    },
+    {
+      "quest_name": "Get Rose a pig",
+      "reward": [
+        {
+          "reward_name": "Red Rupee",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": []
+    },
+    {
+      "quest_name": "Get Rose a second pig",
+      "reward": [
+        {
+          "reward_name": "Red Rupee",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": [
+        "Get Rose a pig"
+      ]
+    },
+    {
+      "quest_name": "Get Rose a third pig",
+      "reward": [
+        {
+          "reward_name": "Red Rupee",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": [
+        "Get Rose a second pig"
+      ]
+    },
+    {
+      "quest_name": "Get Telescope from Aryll",
+      "quest_description": "Go talk to Aryll at the lookout tower",
+      "reward": [
+        {
+          "reward_name": "Telescope",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": [
+        "Get Hero's Clothes from Grandma"
+      ]
+    },
+    {
+      "quest_name": "Get Hero's Sword from Orca",
+      "reward": [
+        {
+          "reward_name": "Hero's Sword",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": [
+        "Get Telescope from Aryll"
+      ]
+    },
+    {
+      "quest_name": "Go save the pirate in the woods",
+      "reward": [],
+      "location": "B7",
+      "blocked_by": [
+        "Get Hero's Sword from Orca"
+      ]
+    },
+    {
+      "quest_name": "Get Hero's Shield from Grandma",
+      "reward": [
+        {
+          "reward_name": "Hero's Shield",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "B7",
+      "blocked_by": [
+        "Get Hero's Shield from Grandma"
+      ]
+    },
+    {
+      "quest_name": "Board the pirate ship",
+      "reward": [],
+      "location": "B7",
+      "blocked_by": [
+        "Get Hero's Shield from Grandma"
+      ]
+    },
+    {
+      "quest_name": "Play Niko's rope challenge",
+      "reward": [
+        {
+          "reward_name": "Spoils Bag",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "The Pirate Ship of Tetra",
+      "blocked_by": [
+        "Board the pirate ship"
+      ]
+    },
+    {
+      "quest_name": "Catapault to the Forsaken Fortress",
+      "reward": [
+        {
+          "reward_name": "Pirate's Charm",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "The Pirate Ship of Tetra",
+      "blocked_by": [
+        "Play Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Scale the Forsaken Fortress",
+      "reward": [
+        {
+          "reward_name": "Hero's Sword",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "A1",
+      "blocked_by": [
+        "Catapault to the Forsaken Fortress"
+      ]
+    },
+    {
+      "quest_name": "Get a Sail for the boat",
+      "reward": [
+        {
+          "reward_name": "Sail",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "D2",
+      "blocked_by": [
+        "Scale the Forsaken Fortress"
+      ],
+      "precondition": [
+        "80 Rupees"
+      ]
+    },
+    {
+      "quest_name": "Play & Win Zee Fleet Game - 1",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D2",
+      "blocked_by": [
+        "Scale the Forsaken Fortress"
+      ]
+    },
+    {
+      "quest_name": "Play & Win Zee Fleet Game - 2",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 7",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2",
+      "blocked_by": [
+        "Play & Win Zee Fleet Game - 1"
+      ]
+    },
+    {
+      "quest_name": "Play & Win Zee Fleet Game - 3",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 23",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2",
+      "blocked_by": [
+        "Play & Win Zee Fleet Game - 2"
+      ]
+    },
+    {
+      "quest_name": "Play & Win Zee Fleet Game - 4",
+      "quest_occurrence": {
+        "can_complete_until": [
+          "Play & Win Zee Fleet Game - 4"
+        ]
+      },
+      "reward": [
+        {
+          "reward_name": "Orange Rupee",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "D2",
+      "blocked_by": [
+        "Play & Win Zee Fleet Game - 3"
+      ]
+    },
+    {
+      "quest_name": "Play & Win Zee Fleet Game",
+      "quest_occurrence": {
+        "can_complete_until": [
+          "Defeat Ganondorf"
+        ]
+      },
+      "reward": [
+        {
+          "reward_name": "Red Rupee",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "D2",
+      "blocked_by": [
+        "Play & Win Zee Fleet Game - 4"
+      ]
+    }
+  ]
+}
