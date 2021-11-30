@@ -1,4 +1,6 @@
 {
+  "walkthrough_id": 1,
+  "walkthrough_version": "0.0.1",
   "game": {
     "game_name": "The Legend of Zelda: The Wind Waker",
     "release": {
@@ -18,40 +20,40 @@
           "reward_type": "required_item"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": []
     },
     {
       "quest_name": "Crawl under Grandma's House",
       "reward": [
         {
-          "reward_name": "Orange Rupee",
+          "reward_name": "Orange Rupee (100)",
           "reward_type": "rupee"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": []
     },
     {
       "quest_name": "Get Rose a pig",
       "reward": [
         {
-          "reward_name": "Red Rupee",
+          "reward_name": "Red Rupee (20)",
           "reward_type": "rupee"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": []
     },
     {
       "quest_name": "Get Rose a second pig",
       "reward": [
         {
-          "reward_name": "Red Rupee",
+          "reward_name": "Red Rupee (20)",
           "reward_type": "rupee"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
         "Get Rose a pig"
       ]
@@ -60,13 +62,56 @@
       "quest_name": "Get Rose a third pig",
       "reward": [
         {
-          "reward_name": "Red Rupee",
+          "reward_name": "Red Rupee (20)",
           "reward_type": "rupee"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
         "Get Rose a second pig"
+      ]
+    },
+    {
+      "quest_name": "Buy Bait Bag from Beedle",
+      "reward": [
+        {
+          "reward_name": "Beedle's Membership Card",
+          "reward_type": "optional_item"
+        }
+      ],
+      "precondition": [
+        "80 Rupees"
+      ],
+      "blocked_by": []
+    },
+    {
+      "quest_name": "Upgrade to Beedle's Silver Membership",
+      "quest_description": "Obtained after making 30 purchases from Beedle",
+      "reward": [
+        {
+          "reward_name": "Complimentary ID",
+          "reward_description": "Beedle will compliment (heal) Link for his continued patronage.",
+          "reward_type": "optional_item"
+        }
+      ],
+      "location": "Postbox",
+      "blocked_by": [
+        "Buy something from Beedle"
+      ]
+    },
+    {
+      "quest_name": "Upgrade to Beedle's Gold Membership",
+      "quest_description": "Obtained after making 30 purchases from Beedle",
+      "reward": [
+        {
+          "reward_name": "Fill-Up Coupon",
+          "reward_description": "Receive a complete, free replenishment for all consumable items, such as Bombs, Arrows and Hearts.",
+          "reward_type": "optional_item"
+        }
+      ],
+      "location": "Postbox",
+      "blocked_by": [
+        "Upgrade to Beedle's Gold Membership"
       ]
     },
     {
@@ -78,7 +123,7 @@
           "reward_type": "required_item"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
         "Get Hero's Clothes from Grandma"
       ]
@@ -91,7 +136,7 @@
           "reward_type": "required_item"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
         "Get Telescope from Aryll"
       ]
@@ -99,7 +144,7 @@
     {
       "quest_name": "Go save the pirate in the woods",
       "reward": [],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
         "Get Hero's Sword from Orca"
       ]
@@ -112,15 +157,15 @@
           "reward_type": "required_item"
         }
       ],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
-        "Get Hero's Shield from Grandma"
+        "Get Hero's Clothes from Grandma"
       ]
     },
     {
       "quest_name": "Board the pirate ship",
       "reward": [],
-      "location": "B7",
+      "location": "B7 - Outset Island",
       "blocked_by": [
         "Get Hero's Shield from Grandma"
       ]
@@ -146,9 +191,31 @@
           "reward_type": "required_item"
         }
       ],
+      "outcomes": [
+        "Loss of Hero's Sword"
+      ],
       "location": "The Pirate Ship of Tetra",
       "blocked_by": [
         "Play Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Get Heart Piece",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "A1 - Forsaken Fortress",
+      "blocked_by": [
+        {
+          "from": "Catapault to the Forsaken Fortress",
+          "to": "Scale the Forsaken Fortress"
+        },
+        {
+          "from": "Get a Sail for the boat"
+        }
       ]
     },
     {
@@ -159,7 +226,7 @@
           "reward_type": "required_item"
         }
       ],
-      "location": "A1",
+      "location": "A1 - Forsaken Fortress",
       "blocked_by": [
         "Catapault to the Forsaken Fortress"
       ]
@@ -172,12 +239,42 @@
           "reward_type": "required_item"
         }
       ],
-      "location": "D2",
+      "location": "D2 - Windfall Island",
       "blocked_by": [
         "Scale the Forsaken Fortress"
       ],
       "precondition": [
         "80 Rupees"
+      ]
+    },
+    {
+      "quest_name": "Free Tingle",
+      "reward": [
+        {
+          "reward_name": "Tingle Tuner",
+          "reward_type": "optional_item"
+        },
+        {
+          "reward_name": "Tingle's Chart",
+          "reward_type": "other_chart"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Scale the Forsaken Fortress"
+      ]
+    },
+    {
+      "quest_name": "Find Picto Box",
+      "reward": [
+        {
+          "reward_name": "Picto Box",
+          "reward_type": "optional_item"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Free Tingle"
       ]
     },
     {
@@ -188,9 +285,12 @@
           "reward_type": "heart_piece"
         }
       ],
-      "location": "D2",
+      "location": "D2 - Windfall Island",
       "blocked_by": [
         "Scale the Forsaken Fortress"
+      ],
+      "precondition": [
+        "Have enough rupees"
       ]
     },
     {
@@ -201,9 +301,12 @@
           "reward_type": "treasure_chart"
         }
       ],
-      "location": "D2",
+      "location": "D2 - Windfall Island",
       "blocked_by": [
         "Play & Win Zee Fleet Game - 1"
+      ],
+      "precondition": [
+        "Have enough rupees"
       ]
     },
     {
@@ -214,46 +317,1043 @@
           "reward_type": "treasure_chart"
         }
       ],
-      "location": "D2",
+      "location": "D2 - Windfall Island",
       "blocked_by": [
         "Play & Win Zee Fleet Game - 2"
+      ],
+      "precondition": [
+        "Have enough rupees"
       ]
     },
     {
       "quest_name": "Play & Win Zee Fleet Game - 4",
-      "quest_occurrence": {
-        "can_complete_until": [
-          "Play & Win Zee Fleet Game - 4"
-        ]
-      },
       "reward": [
         {
-          "reward_name": "Orange Rupee",
+          "reward_name": "Orange Rupee (100)",
           "reward_type": "rupee"
         }
       ],
-      "location": "D2",
+      "location": "D2 - Windfall Island",
       "blocked_by": [
         "Play & Win Zee Fleet Game - 3"
+      ],
+      "precondition": [
+        "Have enough rupees"
       ]
     },
     {
-      "quest_name": "Play & Win Zee Fleet Game",
-      "quest_occurrence": {
-        "can_complete_until": [
-          "Defeat Ganondorf"
-        ]
-      },
+      "quest_name": "Play & Win Hide and Seek",
       "reward": [
         {
-          "reward_name": "Red Rupee",
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Scale the Forsaken Fortress"
+      ]
+    },
+    {
+      "quest_name": "Talk to Salvage Corp.",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 34",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "E2 - Pawprint Isle",
+      "blocked_by": [
+        "Get a Sail for the boat"
+      ]
+    },
+    {
+      "quest_name": "Get Heart Piece",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "E2 - Pawprint Isle",
+      "blocked_by": [
+        "Get a Sail for the boat"
+      ]
+    },
+    {
+      "quest_name": "Sail to Dragon Roost Island",
+      "reward": [
+        {
+          "reward_name": "Wind Waker",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get a Sail for the boat"
+      ]
+    },
+    {
+      "quest_name": "Learn \"Wind's Requiem\"",
+      "reward": [
+        {
+          "reward_name": "Wind Waker",
+          "reward_type": "wind_waker_song"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Sail to Dragon Roost Island"
+      ]
+    },
+    {
+      "quest_name": "Get Delivery Bag",
+      "reward": [
+        {
+          "reward_name": "Delivery Bag",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Sail to Dragon Roost Island"
+      ]
+    },
+    {
+      "quest_name": "Get Father's Letter",
+      "reward": [
+        {
+          "reward_name": "Father's Letter",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Delivery Bag"
+      ]
+    },
+    {
+      "quest_name": "Mail Sorting Game - 1",
+      "quest_description": "A minimum of 25 letters is needed to complete this quest",
+      "reward": [
+        {
+          "reward_name": "Rupees (?)",
           "reward_type": "rupee"
         }
       ],
-      "location": "D2",
+      "location": "F2 - Dragon Roost Island",
       "blocked_by": [
-        "Play & Win Zee Fleet Game - 4"
+        "Sail to Dragon Roost Island"
+      ]
+    },
+    {
+      "quest_name": "Mail Sorting Game - 2",
+      "quest_description": "A minimum of 25 letters is needed to complete this quest",
+      "reward": [
+        {
+          "reward_name": "Note to Mom",
+          "reward_type": "optional_item"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Mail Sorting Game - 1",
+        "Something else"
+      ]
+    },
+    {
+      "quest_name": "Mail the Note to Mom",
+      "quest_description": "Link will receive a Thank You letter at a later point",
+      "reward": [],
+      "blocked_by": [
+        "Mail Sorting Game - 2"
+      ]
+    },
+    {
+      "quest_name": "Read Thank You letter from Mail Sorting Assistant",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "Postbox",
+      "blocked_by": [
+        "Mail the Note to Mom"
+      ]
+    },
+    {
+      "quest_name": "Deliver Father's Letter",
+      "reward": [],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Father's Letter"
+      ]
+    },
+    {
+      "quest_name": "Help Medli make her way to Valoo",
+      "reward": [
+        {
+          "reward_name": "Bottle 1",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Deliver Father's Letter"
+      ]
+    },
+    {
+      "quest_name": "Get Grappling Hook",
+      "reward": [
+        {
+          "reward_name": "Grappling Hook",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Help Medli make her way to Valoo"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 1",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Help Medli make her way to Valoo"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 2",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Grappling Hook"
+      ]
+    },
+    {
+      "quest_name": "Get Treasure Chart 39",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 39",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Grappling Hook"
+      ]
+    },
+    {
+      "quest_name": "Get Treasure Chart 11",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 11",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Grappling Hook"
+      ]
+    },
+    {
+      "quest_name": "Defeat Gohma",
+      "reward": [
+        {
+          "reward_name": "Din's Pearl",
+          "reward_type": "required_item"
+        },
+        {
+          "reward_name": "Heart Container",
+          "reward_type": "heart_container"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Grappling Hook"
+      ]
+    },
+    {
+      "quest_name": "Use Treasure Chart 39",
+      "reward": [
+        {
+          "reward_name": "Silver Rupee (200)",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "F2 - Dragon Roost Island",
+      "blocked_by": [
+        "Get Treasure Chart 39",
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Use Treasure Chart 34",
+      "reward": [
+        {
+          "reward_name": "Silver Rupee (200)",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "F4 - Eastern Triangle Isle",
+      "blocked_by": [
+        "Talk to Salvage Corp.",
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Get Bottle 2",
+      "reward": [
+        {
+          "reward_name": "Bottle 2",
+          "reward_type": "optional_item"
+        }
+      ],
+      "location": "F5 - Bomb Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Help the Deku Tree",
+      "reward": [
+        {
+          "reward_name": "Deku Leaf",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Float to lonely isle",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 3",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Open the Nintendo Gallery",
+      "reward": [],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Obtain special firefly",
+      "reward": [],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Help Lenzo take pictures",
+      "reward": [
+        {
+          "reward_name": "Deluxe Picto Box",
+          "reward_type": "optional_item"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Obtain special firefly",
+        "Find Picto Box"
+      ]
+    },
+    {
+      "quest_name": "Assist the Joyous Volunteer Association",
+      "quest_description": "Decorate the town and talk to man on bench",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Interpret Tott's Dancing",
+      "reward": [
+        {
+          "reward_name": "Song of Passing",
+          "reward_type": "wind_waker_song"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Win Auction 1",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Win Auction 2",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 18",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Win Auction 1"
+      ]
+    },
+    {
+      "quest_name": "Win Auction 3",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 38",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Win Auction 2"
+      ]
+    },
+    {
+      "quest_name": "Win Auction 4",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Win Auction 3"
+      ]
+    },
+    {
+      "quest_name": "Use Treasure Chart 18",
+      "reward": [
+        {
+          "reward_name": "Green Rupee (1)",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Win Auction 2"
+      ]
+    },
+    {
+      "quest_name": "Help the couple get married",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Get the windmill started and enter from Lenzo's balcony",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Lenzo's \"Affair\" Picto",
+      "quest_description": "Take a picture of Lenzo talking to a lady",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 24",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Help the Gloomy Boy with a Full Moon Picto",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 31",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Beauty Queen Picto",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 33",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Defeat Gohma"
+      ]
+    },
+    {
+      "quest_name": "Use Treasure Chart 31",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Gloomy Boy with a Full Moon Picto"
+      ]
+    },
+    {
+      "quest_name": "Get the Boomerang",
+      "reward": [
+        {
+          "reward_name": "Boomerang",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 1",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 2",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 3",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 4",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Joy Pendant - 5",
+      "reward": [
+        {
+          "reward_name": "Joy Pendant",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Knight Crest",
+      "reward": [
+        {
+          "reward_name": "Knight Crest",
+          "reward_type": "spoil"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Treasure Chart 1",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 1",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Treasure Chart 15",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 15",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Defeat Kalle Demos",
+      "reward": [
+        {
+          "reward_name": "Heart Container",
+          "reward_type": "heart_container"
+        },
+        {
+          "reward_name": "Farore's Pearl",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Get the Boomerang"
+      ]
+    },
+    {
+      "quest_name": "Check the Postbox",
+      "quest_description": "Get heart piece from a letter after defeating Kalle Demos",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "F6 - Forest Haven",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Visit Greatfish Isle",
+      "reward": [],
+      "location": "B4 - Greatfish Isle",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Obtain Pirate Password",
+      "reward": [],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Visit Greatfish Isle"
+      ]
+    },
+    {
+      "quest_name": "Niko's rope challenge",
+      "reward": [
+        {
+          "reward_name": "Bombs",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "D2 - Windfall Island",
+      "blocked_by": [
+        "Obtain Pirate Password"
+      ]
+    },
+    {
+      "quest_name": "Get Beedle's Chart",
+      "reward": [
+        {
+          "reward_name": "Beedle's Chart",
+          "reward_type": "other_chart"
+        }
+      ],
+      "location": "Postbox",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Find Jabun",
+      "reward": [
+        {
+          "reward_name": "Nayru's Pearl",
+          "reward_type": "required_item"
+        }
+      ],
+      "location": "B7 - Outset Island",
+      "blocked_by": [
+        "Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Learn the Hurricane Spin",
+      "reward": [],
+      "location": "B7 - Outset Island",
+      "precondition": [
+        "10 Knight Crests"
+      ],
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Spar with Orca",
+      "quest_description": "Hit him 500 times without being hit 3 times yourself",
+      "reward": [
+        {
+          "reward_name": "heart_piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "B7 - Outset Island",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Get Big Wallet",
+      "quest_description": "Visit Fairy on Outset Island under the rock",
+      "reward": [
+        {
+          "reward_name": "Big Wallet Upgrade",
+          "reward_type": "great_fairy_upgrade"
+        }
+      ],
+      "location": "B7 - Outset Island",
+      "blocked_by": [
+        "Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Get Treasure Chart 8",
+      "quest_description": "Play Deku Golf on Horseshoe Island",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 8",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "A7 - Horseshoe Island",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Get Treasure Chart 28",
+      "quest_description": "Clear the secret cave",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 28",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "A7 - Horseshoe Island",
+      "blocked_by": [
+        "Help the Deku Tree"
+      ]
+    },
+    {
+      "quest_name": "Scale Needle Rock Isle",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "A5 - Needle Rock Island",
+      "precondition": [
+        "1 Hyoi Pear"
+      ],
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Pillage Great Fish Crevice",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "B4 - Greatfish Isle",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Destroy ships at Rock Spire Isle",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "B3 - Rock Spire Isle",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Scale Rock Spire Isle and clear secret cave",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 37",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "B3 - Rock Spire Isle",
+      "blocked_by": [
+        "Destroy ships at Rock Spire Isle"
+      ]
+    },
+    {
+      "quest_name": "Clear secret cave on Star Island",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "B1 - Star Island",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Clear the submarine at Northern Fairy Island",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 22",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "C1 - Northern Fairy Island",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Get Huge Wallet",
+      "reward": [
+        {
+          "reward_name": "Huge Wallet Upgrade",
+          "reward_type": "great_fairy_upgrade"
+        }
+      ],
+      "location": "C1 - Northern Fairy Island",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Win the Cannon Shoot mini-game - 1",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "C2 - Spectacle Island",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Win the Cannon Shoot mini-game - 2",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 17",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "C2 - Spectacle Island",
+      "blocked_by": [
+        "Win the Cannon Shoot mini-game - 1"
+      ]
+    },
+    {
+      "quest_name": "Win the Cannon Shoot mini-game - 3",
+      "reward": [
+        {
+          "reward_name": "Orange Rupee (100)",
+          "reward_type": "rupee"
+        }
+      ],
+      "location": "C2 - Spectacle Island",
+      "blocked_by": [
+        "Win the Cannon Shoot mini-game - 2"
+      ]
+    },
+    {
+      "quest_name": "Defeat Big Octo at Tingle Island",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "C3 - Tingle Island",
+      "blocked_by": [
+        "Get the Boomerang"
+      ]
+    },
+    {
+      "quest_name": "Clear Enemies at Six-Eye Reef",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D4 - Six-Eye Reef",
+      "blocked_by": [
+        "Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Clear Enemies at Stone Watcher Island",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "C5 - Stone Watcher Island",
+      "blocked_by": [
+        "Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Get Bombs Upgrade",
+      "reward": [
+        {
+          "reward_name": "Bombs Upgrade",
+          "reward_type": "great_fairy_upgrade"
+        }
+      ],
+      "location": "D6 - Southern Fairy Island",
+      "blocked_by": [
+        "Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Clear 3 Platforms near Southern Fairy Island",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 40",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D6 - Southern Fairy Island",
+      "blocked_by": [
+        "Niko's rope challenge"
+      ]
+    },
+    {
+      "quest_name": "Clear Submarine at Headstone Island",
+      "reward": [
+        {
+          "reward_name": "Treasure Chart 14",
+          "reward_type": "treasure_chart"
+        }
+      ],
+      "location": "D6 - Headstone Island",
+      "blocked_by": [
+        "Defeat Kalle Demos"
+      ]
+    },
+    {
+      "quest_name": "Fly to the peak of Headstone Island",
+      "reward": [
+        {
+          "reward_name": "Heart Piece",
+          "reward_type": "heart_piece"
+        }
+      ],
+      "location": "D6 - Headstone Island",
+      "precondition": [
+        "1 Hyoi Pear"
+      ],
+      "blocked_by": [
+        "Defeat Kalle Demos"
       ]
     }
+
+    ... TBC
+    https://gamefaqs.gamespot.com/gamecube/469050-the-legend-of-zelda-the-wind-waker/faqs/22821
+    https://gamefaqs.gamespot.com/gamecube/469050-the-legend-of-zelda-the-wind-waker/faqs/51569
+
   ]
 }
